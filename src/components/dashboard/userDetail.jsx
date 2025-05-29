@@ -20,7 +20,7 @@ function UserDetail({ selectedUser,refetchUsers,setLoading }) {
     setLoading(true);
     try {
       const { data } = await authAxios().post(
-        `${baseUrl}/auth/getuserbyid`,
+        `${BASE_URL}/auth/getuserbyid`,
         { id: selectedUser?._id }
       );
       setUser(data?.data);
@@ -39,7 +39,7 @@ function UserDetail({ selectedUser,refetchUsers,setLoading }) {
     setLoading(true)
     try {
       const { data } = await authAxios().post(
-        `${baseUrl}/auth/block`,
+        `${BASE_URL}/auth/block`,
         { id: user._id, isBlocked: !user.isBlocked }
       );
 
@@ -65,7 +65,7 @@ function UserDetail({ selectedUser,refetchUsers,setLoading }) {
     setLoading(true)
     try {
       const { data } = await authAxios().post(
-        `${baseUrl}/auth/editUser`,
+        `${BASE_URL}/auth/editUser`,
         {
           id: editedUser._id,
           name: editedUser.name,

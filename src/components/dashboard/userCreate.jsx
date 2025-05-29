@@ -39,7 +39,7 @@ function UserCreate({setLoading}) {
 
     try {
       const response = await authAxios().post(
-        `${baseUrl}/auth/adminCreateUser`,
+        `${BASE_URL}/auth/adminCreateUser`,
         form
       );
 

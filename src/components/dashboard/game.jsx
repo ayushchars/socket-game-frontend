@@ -26,7 +26,7 @@ useEffect(() => {
       setLoading(true)
       try {
         const res = await authAxios().get(
-          `${baseUrl}/game/points/${userId}`,
+          `${BASE_URL}/game/points/${userId}`,
         );
         setClickCount(res.data?.data?.points || 0);
       } catch (error) {
