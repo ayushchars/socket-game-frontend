@@ -1,64 +1,36 @@
-# 🛍️ React Store App (Vite + Tailwind + Mock API)
+# ⚡ Socket Game Frontend
 
-This is a fully responsive e-commerce web application built using **React.js** with **Vite** and styled using **Tailwind CSS**. It simulates an online shopping experience, allowing users to browse products, manage a shopping cart, and log in with **dummy user accounts**. Product data is fetched from the **[Fake Store API](https://fakestoreapi.com/)**.
+This is the **frontend** client for the **Socket Game** project, built using **React.js** and powered by **Vite** for fast and optimized development.
 
----
+## 🌟 Features
 
-## 🚀 Features
-
-- ⚛️ Built with **Vite + React.js**
-- 💨 Styled with **Tailwind CSS**
-- 🧭 Routing via **React Router DOM**
-- 🛒 **Shopping Cart** functionality:
-  - Add to cart
-  - Update quantity
-  - Remove items
-- 📱 **Responsive Design** (mobile-first)
-- 🔐 **Mock Authentication**:
-  - Use dummy credentials or create your own user (in-memory)
-- 📡 **Mock API Integration** with [Fake Store API](https://fakestoreapi.com/)
-- ⚠️ No backend: Fully frontend-only application
+- React.js with Vite for rapid development
+- WebSocket support for real-time gameplay
+- Clean and modular component-based architecture
+- API integration with backend via `.env` configuration
 
 ---
 
-## 🔒 Authentication Notes
+## 📦 Installation
 
-- Multiple dummy users are available for login.
-- You can also create a new user manually.
-- No real authentication or persistent login — all data is stored temporarily in the app's state and resets on refresh.
-
----
-
-## 🧰 Tech Stack
-
-- **React.js** (with Vite)
-- **Tailwind CSS** for styling
-- **React Router DOM** for routing
-- **Fake Store API** for product data
-- **Local State / Context API** for managing cart and users
-
----
-
-## 📦 Getting Started
-
-Follow these steps to set up and run the project locally:
-
-### 1. Clone the repository
+Clone the repository:
 
 ```bash
+https://github.com/ayushchars/socket-game-frontend.git
+cd socket-game-frontend
 
-git clone https://github.com/your-username/react-store-app.git
-cd react-store-app
+Install dependencies:
+npm install or npm install --force
 
-2. Install dependencies
-npm install
 
-3. Start the development server
-npm install
+🛠 Environment Setup
+Create a .env file in the root directory with the following variable:
+VITE_REACT_APP_BASEURL=http://localhost:PORT
 
-4. After starting, the app will be available at:
-http://localhost:5173
+Run the App
+npm run dev
 
-5. Dummy User Login
-email - admin@xyz.com
-password - 12345678
+Create Admin User
+Navigate to: baseUrl/signup
+
+Use the keyword: admin (in lowercase) to verify the token and access the signup page.
